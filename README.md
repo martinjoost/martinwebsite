@@ -2,7 +2,7 @@
 
 # [Angular Material Starter Template](https://onthecode.co.uk/angular-material-starter-template-for-your-next-project/)
 
-![Product Gif](https://github.com/umutesen/angular-material-template/blob/media/material-template-demo.gif)
+![Product Gif](https://github.com/umutesen/martinwebsite/blob/media/material-template-demo.gif)
 
 
 **[Angular Material Application Template](https://onthecode.co.uk/angular-material-starter-template-for-your-next-project/)** is a free template built with Angular 8 and Angular Material 8. You can use it out of the box without having to change any file paths. Everything you need to start development on an Angular 8 project is here.
@@ -43,12 +43,12 @@ This application template came as a result of several applications that we have 
 * [Licensing](#licensing)
 
 ## Demo
-[View Demo](http://demo.onthecode.co.uk/angular-material-template)
+[View Demo](http://demo.onthecode.co.uk/martinwebsite)
 
 ## Quick start
 Start by downloading the template from one of these locations:
 
-- [Download from Github](https://github.com/umutesen/angular-material-template/archive/master.zip)
+- [Download from Github](https://github.com/umutesen/martinwebsite/archive/master.zip)
 - [Download from onthecode](https://onthecode.co.uk/angular-material-starter-template-for-your-next-project/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) and currently uses version 8.x and Angular 8.x.
@@ -61,14 +61,14 @@ Follow the steps below to start using the template.
 4. Make sure you have installed [Angular CLI](https://github.com/angular/angular-cli) already. If not, please install.
 5. Run in terminal: ```npm install```
 6. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-7. Use your favourite IDE to **rebrand** the project. Just search and replace all occurances of `angular-material-template` with your project name.
+7. Use your favourite IDE to **rebrand** the project. Just search and replace all occurances of `martinwebsite` with your project name.
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## Supported Browsers
 At present, we officially aim to support the last two versions of the following browsers:
 
-<img src="https://github.com/umutesen/angular-material-template/blob/media/chrome.png?raw=true" width="64" height="64"><img src="https://github.com/umutesen/angular-material-template/blob/media/firefox.png?raw=true" width="64" height="64"><img src="https://github.com/umutesen/angular-material-template/blob/media/edge.png?raw=true" width="64" height="64"><img src="https://github.com/umutesen/angular-material-template/blob/media/safari.png?raw=true" width="64" height="64"> <img src="https://github.com/umutesen/angular-material-template/blob/media/opera.png?raw=true" width="64" height="64">
+<img src="https://github.com/umutesen/martinwebsite/blob/media/chrome.png?raw=true" width="64" height="64"><img src="https://github.com/umutesen/martinwebsite/blob/media/firefox.png?raw=true" width="64" height="64"><img src="https://github.com/umutesen/martinwebsite/blob/media/edge.png?raw=true" width="64" height="64"><img src="https://github.com/umutesen/martinwebsite/blob/media/safari.png?raw=true" width="64" height="64"> <img src="https://github.com/umutesen/martinwebsite/blob/media/opera.png?raw=true" width="64" height="64">
 
 ### What's included
 
@@ -231,11 +231,11 @@ Within the download you'll find the following directories and files:
 ```
 
 ## Resources
-- Demo: <http://demo.onthecode.co.uk/angular-material-template>
-- Download Page: <https://onthecode.co.uk/product/angular-material-template>
-- License Agreement: [License Agreement](https://github.com/umutesen/angular-material-template/blob/master/LICENSE)
+- Demo: <http://demo.onthecode.co.uk/martinwebsite>
+- Download Page: <https://onthecode.co.uk/product/martinwebsite>
+- License Agreement: [License Agreement](https://github.com/umutesen/martinwebsite/blob/master/LICENSE)
 - Support: [Ask onthecode](https://onthecode.co.uk/ask-question)
-- Issues: [Github Issues](https://github.com/umutesen/angular-material-template/issues)
+- Issues: [Github Issues](https://github.com/umutesen/martinwebsite/issues)
 
 ## Technical Help
 
@@ -250,4 +250,4 @@ If you have questions or need help integrating the product please [contact us](h
 ## Licensing
 
 - Copyright 2019 onthecode (https://onthecode.co.uk/)
-- Licensed under MIT [License Agreement](https://github.com/umutesen/angular-material-template/blob/master/LICENSE)
+- Licensed under MIT [License Agreement](https://github.com/umutesen/martinwebsite/blob/master/LICENSE)

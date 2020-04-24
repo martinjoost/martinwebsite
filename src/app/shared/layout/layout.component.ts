@@ -1,7 +1,5 @@
 import { Component, OnInit, ChangeDetectorRef, OnDestroy, AfterViewInit } from '@angular/core';
 import { MediaMatcher } from '@angular/cdk/layout';
-import { TimerObservable } from 'rxjs/observable/TimerObservable';
-import { Subscription } from 'rxjs';
 
 import { environment } from './../../../environments/environment';
 import { AuthenticationService } from './../../core/services/auth.service';
@@ -19,8 +17,6 @@ export class LayoutComponent implements OnInit, OnDestroy, AfterViewInit {
     showSpinner: boolean;
     userName: string;
     isAdmin: boolean;
-
-    private autoLogoutSubscription: Subscription;
 
     constructor(private changeDetectorRef: ChangeDetectorRef,
         private media: MediaMatcher,
@@ -44,7 +40,6 @@ export class LayoutComponent implements OnInit, OnDestroy, AfterViewInit {
     ngOnDestroy(): void {
         // tslint:disable-next-line: deprecation
         this.mobileQuery.removeListener(this._mobileQueryListener);
-        this.autoLogoutSubscription.unsubscribe();
     }
 
     ngAfterViewInit(): void {

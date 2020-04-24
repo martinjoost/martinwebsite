@@ -12,13 +12,10 @@ import { NGXLogger } from 'ngx-logger';
 export class UserListComponent implements OnInit {
 
   constructor(
-    private logger: NGXLogger,
-    private notificationService: NotificationService,
     private titleService: Title
   ) { }
 
   ngOnInit() {
-    this.titleService.setTitle('angular-material-template - Users');
-    this.logger.log('Users loaded');
+    this.titleService.setTitle('martinwebsite - Users');
   }
 }
