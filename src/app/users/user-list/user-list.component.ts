@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
-import { NotificationService } from '../../core/services/notification.service';
-import { NGXLogger } from 'ngx-logger';
 
 @Component({
   selector: 'app-user-list',

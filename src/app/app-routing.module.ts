@@ -4,10 +4,6 @@ import { Routes, RouterModule } from '@angular/router';
 
 const appRoutes: Routes = [
     {
-        path: 'auth',
-        loadChildren: './auth/auth.module#AuthModule'
-    },
-    {
         path: 'home',
         loadChildren: './dashboard/dashboard.module#DashboardModule',
     },
@@ -25,7 +21,7 @@ const appRoutes: Routes = [
     },
     {
         path: '**',
-        redirectTo: 'dashboard',
+        redirectTo: 'home',
         pathMatch: 'full'
     }
 ];
