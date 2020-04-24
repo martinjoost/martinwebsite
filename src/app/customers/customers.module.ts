@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CustomersRoutingModule } from './customers-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { CustomerListComponent } from './customer-list/customer-list.component';
+import { BottomSheetOverviewExampleSheetComponent } from './bottom-sheet-overview-example-sheet/bottom-sheet-overview-example-sheet.component';
 
 @NgModule({
   imports: [
@@ -11,9 +12,11 @@ import { CustomerListComponent } from './customer-list/customer-list.component';
     SharedModule
   ],
   declarations: [
-    CustomerListComponent
+    CustomerListComponent,
+    BottomSheetOverviewExampleSheetComponent
   ],
   entryComponents: [
+    BottomSheetOverviewExampleSheetComponent
   ]
 })
 export class CustomersModule { }

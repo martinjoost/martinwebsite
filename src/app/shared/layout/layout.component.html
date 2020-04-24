@@ -96,6 +96,7 @@
         <a mat-list-item href="https://github.com/martinjoost" target="_blank">
           <i class="fab fa-github"></i>
           <p mat-line> Github </p>
+          <i matListIcon class="fab fa-angular"></i>
         </a>
 
         <a mat-list-item href="https://codepen.io/martinbjoost" target="_blank">
@@ -110,23 +111,13 @@
           <p mat-line> Contáctame </p>
         </a>
 
-
       </mat-nav-list>
 
     </mat-sidenav>
 
     <!-- Main content -->
     <mat-sidenav-content class="sidenav-content">
-
-      <div class="progress-bar-container">
-        <mat-progress-bar color="accent" mode="indeterminate" *ngIf="spinnerService.visibility | async">
-        </mat-progress-bar>
-        <!-- <mat-spinner class="spinner" [diameter]="50" *ngIf="showSpinner"></mat-spinner> -->
-      </div>
-
-
       <router-outlet></router-outlet>
-
     </mat-sidenav-content>
   </mat-sidenav-container>
 

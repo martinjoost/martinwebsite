@@ -146,3 +146,16 @@ p .mat-icon {
     opacity: 1;
   }
 }
+
+.fa-html5{
+  color:#de4b25;
+}
+.fa-css3{
+  color: #2a97c5;
+}
+.fa-js{
+  color: #e7ba23;
+}
+.fa-react{
+  color:#61dbfb;
+}
