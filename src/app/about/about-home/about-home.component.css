@@ -1,3 +1,9 @@
-mat-icon {
-    color: rgb(200, 0, 0);
+.fa-twitter{
+    color: #1da1f2;
+}
+.fa-linkedin{
+    color: #0077b5;
+}
+.fa-instagram{
+    color: #ed4956
 }

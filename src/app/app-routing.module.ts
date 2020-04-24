@@ -16,7 +16,7 @@ const appRoutes: Routes = [
         loadChildren: './users/users.module#UsersModule',
     },
     {
-        path: 'about',
+        path: 'contact',
         loadChildren: './about/about.module#AboutModule',
     },
     {
