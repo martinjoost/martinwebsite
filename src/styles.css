@@ -30,7 +30,13 @@ body {
   text-align: right;
 }
 
+.login-container {
+  height: 80vh;
+}
 
+.login-actions {
+  margin-left: unset !important;
+}
 
 .mat-list-item,
 .mat-menu-item {
@@ -50,6 +56,30 @@ body {
   flex: 0 0 60px;
 }
 
+.mat-table .mat-row:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.mat-table td.mat-cell a:hover {
+  text-decoration: underline;
+}
+
+.mat-table td.mat-cell:first-child,
+.mat-table td.mat-footer-cell:first-child,
+.mat-table th.mat-header-cell:first-child {
+  padding-left: 20px !important;
+}
+
+.mat-table td.mat-cell:last-child,
+.mat-table td.mat-footer-cell:last-child,
+.mat-table th.mat-header-cell:last-child {
+  padding-right: 10px !important;
+}
+
+.mat-table .mat-cell a {
+  color: inherit;
+  text-decoration: none;
+}
 
 .no-records {
   padding-top: 20px;

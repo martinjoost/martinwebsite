@@ -4,9 +4,10 @@
   }
 
 }
-p{
+.subtitle__history{
   text-align: justify;
 }
+
 .container{
   margin: 0px;
   height: 20em;
