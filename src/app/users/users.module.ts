@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { UsersRoutingModule } from './users-routing.module';
-import { UserListComponent } from './user-list/user-list.component';
+import { ExperienciesComponent } from './user-list/experiencies.component';
 import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
@@ -11,6 +11,6 @@ import { SharedModule } from '../shared/shared.module';
     SharedModule,
     UsersRoutingModule
   ],
-  declarations: [UserListComponent]
+  declarations: [ExperienciesComponent]
 })
 export class UsersModule { }

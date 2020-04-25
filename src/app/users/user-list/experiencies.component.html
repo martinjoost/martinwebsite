@@ -22,13 +22,12 @@
             {{job.description}}
           </p>
         </div>
-        <mat-divider></mat-divider>
-        <br>
-        <div class="card__footer">
-          <div *ngFor="let implementation of job.implementations"
-            style="display: inline-block;padding: 5px;text-align: center;">
+        <div class="card__footer" *ngIf="job.implementations != ''">
+          <mat-divider></mat-divider>
+          <br>
+          <div class="footer_implementations" *ngFor="let implementation of job.implementations">
             <div>
-              <button mat-stroked-button color="primary">{{implementation | uppercase}}</button>
+              <button mat-raised-button>{{implementation | uppercase}}</button>
             </div>
           </div>
 

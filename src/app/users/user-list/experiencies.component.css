@@ -12,3 +12,11 @@
 .card__footer{
     text-align: center;
 }
+.footer_implementations{
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+}
+button{
+    color:#4527a0;
+}
