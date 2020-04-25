@@ -7,7 +7,7 @@ import {
   MatProgressSpinnerModule, MatDatepickerModule, MatTableModule,
   MatAutocompleteModule, MatDialogModule, MatTabsModule, MatTooltipModule,
   MatSelectModule, MatPaginatorModule, MatChipsModule, MatButtonToggleModule,
-  MatSlideToggleModule, MatBadgeModule, MatCheckboxModule, MatExpansionModule, MatSortModule, MatBottomSheetModule
+  MatSlideToggleModule, MatBadgeModule, MatCheckboxModule, MatExpansionModule, MatSortModule, MatBottomSheetModule, MatGridListModule
 } from '@angular/material';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
@@ -21,7 +21,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     MatAutocompleteModule, MatTableModule, MatDialogModule, MatTabsModule,
     MatTooltipModule, MatSelectModule, MatPaginatorModule, MatChipsModule,
     MatButtonToggleModule, MatSlideToggleModule, MatBadgeModule, MatCheckboxModule,
-    MatExpansionModule, DragDropModule, MatSortModule, MatBottomSheetModule
+    MatExpansionModule, DragDropModule, MatSortModule, MatBottomSheetModule, MatGridListModule
   ],
   exports: [
     CommonModule,
@@ -31,7 +31,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     MatAutocompleteModule, MatTableModule, MatDialogModule, MatTabsModule,
     MatTooltipModule, MatSelectModule, MatPaginatorModule, MatChipsModule,
     MatButtonToggleModule, MatSlideToggleModule, MatBadgeModule, MatCheckboxModule,
-    MatExpansionModule, DragDropModule, MatSortModule, MatBottomSheetModule
+    MatExpansionModule, DragDropModule, MatSortModule, MatBottomSheetModule, MatGridListModule
   ],
   providers: [],
   declarations: []

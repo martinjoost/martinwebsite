@@ -1,5 +1,15 @@
+@media screen and (max-width: 700px) {
+  .banner__title{
+    font-size: 2em
+  }
+
+}
+p{
+  text-align: justify;
+}
 .container{
   margin: 0px;
+  height: 20em;
 }
 .container__banner{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../assets/images/aboutbanner.JPG");
@@ -8,6 +18,9 @@
   background-size: cover;
   position: relative;
   max-width: 100%;
+}
+.container__body{
+  padding: 1em;
 }
 .banner__text {
   text-align: center;
@@ -29,8 +42,10 @@
 .banner__title{
   font-size: 3em;
 }
-@media screen and (max-width: 700px) {
-  .banner__title{
-    font-size: 2em
-  }
+.body__subtitle{
+  font-weight: 100;
+  font-size: 2em;
+}
+img{
+  width: 100%;
 }
