@@ -1,7 +1,7 @@
 <div class="navbar-container" [class.example-is-mobile]="mobileQuery.matches">
 
   <!-- Top navbar -->
-  <mat-toolbar class="navbar" color="primary">
+  <mat-toolbar class="navbar">
 
     <button mat-icon-button (click)="snav.toggle()">
       <mat-icon>menu</mat-icon>
@@ -13,25 +13,7 @@
 
     <span class="navbar-spacer"></span>
     <span class="navbar__txtright" >Martin Barria Joost</span>
-    <button mat-button [matMenuTriggerFor]="userMenu">
-      <mat-icon>person</mat-icon>
-    </button>
-    <mat-menu #userMenu="matMenu" xPosition="before" yPosition="above" [overlapTrigger]="false">
-      <div style="text-align: center;padding: 5px;color:#ddd" >
-        <i style="font-size:2em;" class="fas fa-kiss-wink-heart"></i>
-        <br>
-        <span>En construcción, gracias por tu click </span>
-      </div>
-      <mat-divider></mat-divider>
-      <button disabled mat-menu-item [routerLink]="['/account/profile']">
-        <mat-icon>person</mat-icon>
-        <span>Account</span>
-      </button>
-      <button disabled mat-menu-item [routerLink]="['/auth/login']">
-        <mat-icon>exit_to_app</mat-icon>
-        <span>Log out</span>
-      </button>
-    </mat-menu>
+  
   </mat-toolbar>
   <mat-sidenav-container class="navbar-sidenav-container">
     <!-- Side nav -->
@@ -47,7 +29,7 @@
         </a>
         <a mat-list-item [routerLink]="['/skills']" routerLinkActive="active">
           <mat-icon mat-list-icon>
-            business
+            gamepad
           </mat-icon>
           <p mat-line> Habilidaddes </p>
         </a>

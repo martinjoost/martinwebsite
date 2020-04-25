@@ -1,0 +1,14 @@
+.card{
+    margin-bottom: 1em;
+}
+.card__header{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+}
+.card__body{
+    text-align: justify;
+}
+.card__footer{
+    text-align: center;
+}

@@ -4,12 +4,14 @@
 
 .navbar {
   z-index: 2;
+  background: #4527A0;
+  color: white;
 }
 
 .navbar-brand {
   text-decoration: none;
-  color: white;
   font-weight: 100;
+  color: white;
 }
 
 .navbar-container {
