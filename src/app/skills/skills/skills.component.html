@@ -50,56 +50,35 @@
           <mat-tab label="Frameworks"> 
             <mat-list>
               <mat-list-item mat-list-item>
-                <img matListIcon style="width: 1em;"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png" alt="">
+                <img matListIcon  class="otherlibs__img" 
+                src="https://www.stickpng.com/assets/images/5847ea22cef1014c0b5e4833.png" alt="">
                 <button mat-line mat-flat-button (click)="openBottomSheet()">ANGULAR <span class="material-icons">
                   trending_up
                   </span></button>
               </mat-list-item>
-              <mat-list-item mat-list-item>
-                <p mat-line> REACTJS </p>
-                <i matListIcon class="fab fa-react"></i>
-              </mat-list-item>
-              <mat-list-item>
-                <img matListIcon style="width: 1em;"
-                  src="https://cdn.worldvectorlogo.com/logos/flutter-logo.svg" alt="">
-                <p matLine>
-                  <span>DART</span>
-                </p>
+              <mat-list-item *ngFor="let framework of frameworks" mat-list-item>
+                <img 
+                matListIcon  
+                alt="" 
+                class="otherlibs__img" 
+                [src]="framework.url">
+                <a target="_blank" [href]="framework.href" mat-line mat-flat-button > 
+                  {{framework.name}} 
+                </a>
               </mat-list-item>
             </mat-list>
           </mat-tab>
           <mat-tab label="Otras librerías"> 
             <mat-list>
-              <mat-list-item mat-list-item>
-                <img  matListIcon style="border-radius: 0px;width: auto;"
-                src="https://miro.medium.com/max/520/1*ytpzQXUtyJx2xD2j1iRIZA.png" alt="">
-                <a  target="_blank" href="https://angular.io/guide/universal" mat-line mat-flat-button >ANGULAR UNIVERSAL   </a>
-              </mat-list-item>
-              <mat-list-item mat-list-item>
-                <img matListIcon style="border-radius: 0px;width: auto;"
-                src="https://user-images.githubusercontent.com/3104648/28351989-7f68389e-6c4b-11e7-9bf2-e9fcd4977e7a.png" alt="">
-                <a style="margin-left: -5%;" target="_blank" mat-line mat-flat-button href="https://angular.io/guide/service-worker-getting-started">ANGULAR PWA  </a>
-              </mat-list-item>
-              <mat-list-item mat-list-item>
-                <img matListIcon style="width: 40px;height: 40px;"
-                src="https://img.icons8.com/color/480/firebase.png" alt="">
-                <a target="_blank" mat-line mat-flat-button  href="https://firebase.google.com/" >FIREBASE  </a>
-              </mat-list-item>
-              <mat-list-item mat-list-item>
-                <img matListIcon style="width: 40px;height: 40px;"
-                src="https://img.icons8.com/color/480/nodejs.png" alt="">
-                <a target="_blank" mat-line mat-flat-button href="https://nodejs.org/es/" >NODEJS  </a>
-              </mat-list-item>
-              <mat-list-item mat-list-item>
-                <img matListIcon style="width: 40px;height: 40px;"
-                src="https://www.w3big.com/highcharts/Vx4_Psj1.png" alt="">
-                <a target="_blank" mat-line mat-flat-button href="https://www.highcharts.com/">HIGHCHARTS.JS  </a>
-              </mat-list-item>
-              <mat-list-item mat-list-item>
-                <img matListIcon style="width: 40px;height: 40px;"
-                src="https://pbs.twimg.com/media/CTjmt3UXIAQxorO.png" alt="">
-                <a target="_blank" mat-line mat-flat-button href="https://angular.io/guide/i18n">i18N Internalization  </a>
+              <mat-list-item *ngFor="let lib of othersLibs" mat-list-item>
+                <img 
+                matListIcon  
+                alt="" 
+                class="otherlibs__img" 
+                [src]="lib.url">
+                <a target="_blank" [href]="lib.href" mat-line mat-flat-button > 
+                  {{lib.name}} 
+                </a>
               </mat-list-item>
             </mat-list>  
           </mat-tab>

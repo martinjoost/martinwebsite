@@ -5,3 +5,10 @@ table {
 th.mat-sort-header-sorted {
     color: black;
 }
+.fa-hand-holding-heart{
+    color:#4527A0;
+}
+.otherlibs__img{
+    width: auto !important;
+    border-radius: 0px !important;
+}
