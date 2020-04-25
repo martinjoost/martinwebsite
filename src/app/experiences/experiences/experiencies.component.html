@@ -1,5 +1,5 @@
 <div class="container animated fadeInRight" fxLayout="row" fxLayoutAlign="center none">
-  <div fxFlex="70%">
+  <div class="container__card" fxFlex="70%">
 
     <mat-card *ngFor="let job of jobs" class="card">
       <mat-card-header>
@@ -15,7 +15,7 @@
           </div>
         </div>
       </mat-card-header>
-      <img mat-card-image [src]="job.url" alt="Photo of a Shiba Inu">
+      <img mat-card-image [src]="job.url" alt="">
       <mat-card-content>
         <div class="card__body">
           <p>
