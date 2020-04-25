@@ -12,23 +12,6 @@
     </a>
 
     <span class="navbar-spacer"></span>
-
-    <button mat-icon-button [matMenuTriggerFor]="notificationMenu">
-      <mat-icon matBadge="2" matBadgeColor="accent">notifications</mat-icon>
-    </button>
-    <mat-menu #notificationMenu="matMenu" xPosition="before" yPosition="above" [overlapTrigger]="false">
-
-      <a mat-menu-item>
-        <span>You have new tasks</span>
-      </a>
-      <a mat-menu-item>
-        <span>You have a new message</span>
-      </a>
-
-    </mat-menu>
-
-
-
     <button mat-button [matMenuTriggerFor]="userMenu">
       <mat-icon>person</mat-icon>
       <span fxShow fxHide.xs>
@@ -36,36 +19,34 @@
       </span>
     </button>
     <mat-menu #userMenu="matMenu" xPosition="before" yPosition="above" [overlapTrigger]="false">
-
-      <a mat-menu-item [routerLink]="['/account/profile']">
+      <div style="text-align: center;padding: 5px;color:#ddd" >
+        <i style="font-size:2em;" class="fas fa-kiss-wink-heart"></i>
+        <br>
+        <span>En construcción, gracias por tu click </span>
+      </div>
+      <mat-divider></mat-divider>
+      <button disabled mat-menu-item [routerLink]="['/account/profile']">
         <mat-icon>person</mat-icon>
         <span>Account</span>
-      </a>
-
-      <a mat-menu-item [routerLink]="['/auth/login']">
+      </button>
+      <button disabled mat-menu-item [routerLink]="['/auth/login']">
         <mat-icon>exit_to_app</mat-icon>
         <span>Log out</span>
-      </a>
-
+      </button>
     </mat-menu>
-
   </mat-toolbar>
-
   <mat-sidenav-container class="navbar-sidenav-container">
     <!-- Side nav -->
     <mat-sidenav #snav [opened]="!mobileQuery.matches" [mode]="mobileQuery.matches ? 'over' : 'side'"
       [fixedInViewport]="mobileQuery.matches" fixedTopGap="56" class="sidenav">
-
       <mat-nav-list>
         <h3 mat-subheader>Home</h3>
-
         <a mat-list-item [routerLink]="['/home']" routerLinkActive="active">
           <mat-icon mat-list-icon>
             favorite
           </mat-icon>
           <p mat-line> Sobre Mí </p>
         </a>
-
         <a mat-list-item [routerLink]="['/customers']" routerLinkActive="active">
           <mat-icon mat-list-icon>
             business
@@ -78,7 +59,6 @@
           </mat-icon>
           <p mat-line> Experiencias </p>
         </a>
-
         <!-- <a mat-list-item [routerLink]="['/account/profile']">
           <mat-icon mat-list-icon>person</mat-icon>
           <p mat-line> Experiencias </p>
@@ -88,29 +68,28 @@
           <mat-icon mat-list-icon>exit_to_app</mat-icon>
           <p mat-line> Log out </p>
         </a> -->
-
         <mat-divider></mat-divider>
-
         <h3 mat-subheader>Encuéntrame en</h3>
-        
         <a mat-list-item href="https://github.com/martinjoost" target="_blank">
           <i class="fab fa-github"></i>
           <p mat-line> Github </p>
           <i matListIcon class="fab fa-angular"></i>
         </a>
-
         <a mat-list-item href="https://codepen.io/martinbjoost" target="_blank">
           <i class="fab fa-codepen"></i>
           <p mat-line> Codepen </p>
         </a>
-
+      </mat-nav-list>
+      <mat-divider></mat-divider>
+      <mat-nav-list>
+        
         <a mat-list-item [routerLink]="['/contact']" routerLinkActive="active">
           <mat-icon mat-list-icon>
-            contact_phone
+            how_to_reg
+
           </mat-icon>
           <p mat-line> Contáctame </p>
         </a>
-
       </mat-nav-list>
 
     </mat-sidenav>

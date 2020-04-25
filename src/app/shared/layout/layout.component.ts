@@ -1,8 +1,6 @@
 import { Component, OnInit, ChangeDetectorRef, OnDestroy, AfterViewInit } from '@angular/core';
 import { MediaMatcher } from '@angular/cdk/layout';
 
-import { environment } from './../../../environments/environment';
-import { SpinnerService } from '../../core/services/spinner.service';
 
 @Component({
     selector: 'app-layout',
@@ -18,8 +16,7 @@ export class LayoutComponent implements OnInit, OnDestroy, AfterViewInit {
     isAdmin: boolean;
 
     constructor(private changeDetectorRef: ChangeDetectorRef,
-        private media: MediaMatcher,
-        public spinnerService: SpinnerService) {
+        private media: MediaMatcher) {
 
         this.mobileQuery = this.media.matchMedia('(max-width: 1000px)');
         this._mobileQueryListener = () => changeDetectorRef.detectChanges();
