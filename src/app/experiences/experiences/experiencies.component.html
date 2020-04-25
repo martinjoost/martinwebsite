@@ -9,13 +9,17 @@
             <mat-card-subtitle>{{job.position}}</mat-card-subtitle>
           </div>
           <div style="text-align:right">
-            <div><span class="material-icons"> <label *ngIf="!job.remote">location_on</label><label
-                  *ngIf="job.remote">home</label></span></div>
+            <div>
+              <span class="material-icons">
+               <label *ngIf="!job.remote">location_on</label>
+               <label *ngIf="job.remote">home</label>
+              </span>
+            </div>
             <div> <span> {{job.location}} </span></div>
           </div>
         </div>
       </mat-card-header>
-      <img mat-card-image [src]="job.url" alt="">
+      <img mat-card-image src="{{job.url}}" alt="">
       <mat-card-content>
         <div class="card__body">
           <p>
