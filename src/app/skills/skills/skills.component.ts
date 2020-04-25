@@ -9,7 +9,33 @@ import { BottomSheetOverviewExampleSheetComponent } from '../bottom-sheet-overvi
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
-
+  languages:any = [
+    {
+      name:'HTML5',
+      href:'',
+      url:'https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png',
+    },
+    {
+      name:'CSS3',
+      href:'',
+      url:'https://www.iconbolt.com/iconsets/social-media-logos/css3-html-logo-social-social-media.svg',
+    },
+    {
+      name:'JAVASCRIPT',
+      href:'',
+      url:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png',
+    },
+    {
+      name:'JAVA',
+      href:'',
+      url:'https://classes.engineering.wustl.edu/cse231/core/images/2/26/Java.png',
+    },
+    {
+      name:'DART',
+      href:'https://dart.dev/',
+      url:'https://www.stickpng.com/assets/images/5847f289cef1014c0b5e486b.png',
+    }
+  ]
   othersLibs:any = [
     {
       name:'Angular',
@@ -25,11 +51,6 @@ export class SkillsComponent implements OnInit {
       name:'Firebase',
       href:'https://firebase.google.com/',
       url:'https://img.icons8.com/color/480/firebase.png',
-    },
-    {
-      name:'Nodejs',
-      href:'https://nodejs.org/es/',
-      url:'https://img.icons8.com/color/480/nodejs.png',
     },
     {
       name:'Highcharts.js',
@@ -49,14 +70,29 @@ export class SkillsComponent implements OnInit {
   ]
   frameworks:any = [
     {
+      name:'Nodejs',
+      href:'https://nodejs.org/es/',
+      url:'https://img.icons8.com/color/480/nodejs.png',
+    },
+    {
       name:'Reactjs',
       href:'https://angular.io/guide/universal',
       url:'https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png',
     },
     {
-      name:'Dart',
-      href:'https://dart.dev/',
-      url:'https://cdn.worldvectorlogo.com/logos/flutter-logo.svg',
+      name:'Bootstrap',
+      href:'https://getbootstrap.com/',
+      url:'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png',
+    },
+    {
+      name:'Angular Material',
+      href:'https://material.angular.io/',
+      url:'https://camo.githubusercontent.com/c65d6b4721acd88ca81027ccd25c9292bd3a5371/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f616e67756c61722d6d6174657269616c2d657874656e73696f6e732f7061676573406d61737465722f6173736574732f616e67756c61722d6d6174657269616c2d657874656e73696f6e732d6c6f676f2e706e67',
+    },
+    {
+      name:'Material Design',
+      href:'https://material.io/',
+      url:'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Material_Design_Logo.svg/1200px-Google_Material_Design_Logo.svg.png',
     }
   ]
 

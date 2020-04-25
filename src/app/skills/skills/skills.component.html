@@ -13,37 +13,15 @@
         <mat-tab-group mat-align-tabs="center">
           <mat-tab label="Lenguajes">
             <mat-list>
-              <mat-list-item>
-                <i matListIcon class="fab fa-html5"></i>
-                <p matLine>
-                  <span>HTML 5</span>
-                </p>
-              </mat-list-item>
-              <mat-list-item>
-                <i matListIcon class="fab fa-css3"></i>
-                <p matLine>
-                  <span>CSS3</span>
-                </p>
-              </mat-list-item>
-              <mat-list-item>
-                <img matListIcon style="width: 1em;"
-                  src="https://www.stickpng.com/assets/images/5847f289cef1014c0b5e486b.png" alt="">
-                <p matLine>
-                  <span>DART</span>
-                </p>
-              </mat-list-item>
-              <mat-list-item>
-                <i matListIcon class="fab fa-js"></i>
-                <p matLine>
-                  <span>JAVASCRIPT</span>
-                </p>
-              </mat-list-item>
-              <mat-list-item>
-                <img matListIcon style="width: 1em;"
-                src="https://classes.engineering.wustl.edu/cse231/core/images/2/26/Java.png" alt="">
-                <p matLine>
-                  <span>JAVA</span>
-                </p>
+              <mat-list-item *ngFor="let language of languages" mat-list-item>
+                <img 
+                matListIcon  
+                alt="" 
+                class="otherlibs__img" 
+                [src]="language.url">
+                <a href="javascript:void(0);" mat-line mat-flat-button > 
+                  {{language.name | uppercase}} 
+                </a>
               </mat-list-item>
             </mat-list>
           </mat-tab>
@@ -52,7 +30,7 @@
               <mat-list-item mat-list-item>
                 <img matListIcon  class="otherlibs__img" 
                 src="https://www.stickpng.com/assets/images/5847ea22cef1014c0b5e4833.png" alt="">
-                <button mat-line mat-flat-button (click)="openBottomSheet()">ANGULAR <span class="material-icons">
+                <button mat-line mat-flat-button (click)="openBottomSheet()">ANGULAR<span class="material-icons">
                   trending_up
                   </span></button>
               </mat-list-item>
@@ -63,7 +41,7 @@
                 class="otherlibs__img" 
                 [src]="framework.url">
                 <a target="_blank" [href]="framework.href" mat-line mat-flat-button > 
-                  {{framework.name}} 
+                  {{framework.name | uppercase}} 
                 </a>
               </mat-list-item>
             </mat-list>
@@ -77,7 +55,7 @@
                 class="otherlibs__img" 
                 [src]="lib.url">
                 <a target="_blank" [href]="lib.href" mat-line mat-flat-button > 
-                  {{lib.name}} 
+                  {{lib.name | uppercase}} 
                 </a>
               </mat-list-item>
             </mat-list>  
