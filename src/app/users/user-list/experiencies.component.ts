@@ -51,6 +51,6 @@ export class ExperienciesComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.titleService.setTitle('martinwebsite - Users');
+    this.titleService.setTitle('Experiencias');
   }
 }

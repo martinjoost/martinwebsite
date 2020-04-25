@@ -14,7 +14,7 @@ export class CustomerListComponent implements OnInit {
       private _bottomSheet: MatBottomSheet) { }
 
   ngOnInit() {
-    this.titleService.setTitle('Sobre Mí');
+    this.titleService.setTitle('Habilidades');
   }
 
   openBottomSheet(): void {
