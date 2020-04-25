@@ -66,3 +66,6 @@ a.mat-list-item.active {
 mat-menu{
   padding: 0px;
 }
+.navbar__txtright{
+  font-weight: 100;
+}

@@ -4,15 +4,15 @@ import { Routes, RouterModule } from '@angular/router';
 
 const appRoutes: Routes = [
     {
-        path: 'home',
+        path: 'aboutme',
         loadChildren: './dashboard/dashboard.module#DashboardModule',
     },
     {
-        path: 'customers',
+        path: 'skills',
         loadChildren: './customers/customers.module#CustomersModule',
     },
     {
-        path: 'users',
+        path: 'experiences',
         loadChildren: './users/users.module#UsersModule',
     },
     {
@@ -21,7 +21,7 @@ const appRoutes: Routes = [
     },
     {
         path: '**',
-        redirectTo: 'home',
+        redirectTo: 'aboutme',
         pathMatch: 'full'
     }
 ];
