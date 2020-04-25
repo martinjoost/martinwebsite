@@ -1,22 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CustomersRoutingModule } from './customers-routing.module';
+import { SkillsRoutingModule } from './skills-routing.module';
 import { SharedModule } from '../shared/shared.module';
-import { CustomerListComponent } from './customer-list/customer-list.component';
+import { SkillsComponent } from './skills/skills.component';
 import { BottomSheetOverviewExampleSheetComponent } from './bottom-sheet-overview-example-sheet/bottom-sheet-overview-example-sheet.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    CustomersRoutingModule,
+    SkillsRoutingModule,
     SharedModule
   ],
   declarations: [
-    CustomerListComponent,
+    SkillsComponent,
     BottomSheetOverviewExampleSheetComponent
   ],
   entryComponents: [
     BottomSheetOverviewExampleSheetComponent
   ]
 })
-export class CustomersModule { }
+export class SkillsModule { }

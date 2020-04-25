@@ -14,4 +14,4 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
   ],
   entryComponents: []
 })
-export class DashboardModule { }
+export class AboutModule { }

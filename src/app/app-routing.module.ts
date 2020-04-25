@@ -9,7 +9,7 @@ const appRoutes: Routes = [
     },
     {
         path: 'skills',
-        loadChildren: './customers/customers.module#CustomersModule',
+        loadChildren: './skills/skills.module#SkillsModule',
     },
     {
         path: 'experiences',
