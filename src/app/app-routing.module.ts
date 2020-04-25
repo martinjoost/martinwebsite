@@ -5,7 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 const appRoutes: Routes = [
     {
         path: 'aboutme',
-        loadChildren: './dashboard/dashboard.module#DashboardModule',
+        loadChildren: './about/about.module#AboutModule',
     },
     {
         path: 'skills',
@@ -13,11 +13,11 @@ const appRoutes: Routes = [
     },
     {
         path: 'experiences',
-        loadChildren: './users/users.module#UsersModule',
+        loadChildren: './experiences/experiences.module#ExperiencesModule',
     },
     {
         path: 'contact',
-        loadChildren: './about/about.module#AboutModule',
+        loadChildren: './contact/contact.module#ContactModule',
     },
     {
         path: '**',

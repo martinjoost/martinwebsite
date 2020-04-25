@@ -2,14 +2,14 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { LayoutComponent } from '../shared/layout/layout.component';
-import { AboutHomeComponent } from './about-home/about-home.component';
+import { AboutmeComponent } from './aboutme/aboutme.component';
 
 const routes: Routes = [
   {
     path: '',
     component: LayoutComponent,
     children: [
-      { path: '', component: AboutHomeComponent },
+      { path: '', component: AboutmeComponent },
     ]
   }
 ];

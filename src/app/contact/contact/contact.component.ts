@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-about-home',
-  templateUrl: './about-home.component.html',
-  styleUrls: ['./about-home.component.css']
+  selector: 'app-contact',
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.css']
 })
-export class AboutHomeComponent implements OnInit {
+export class ContactComponent implements OnInit {
 
   constructor(private titleService: Title) { }
 

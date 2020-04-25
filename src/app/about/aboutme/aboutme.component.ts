@@ -9,11 +9,11 @@ export interface Tile {
 }
 
 @Component({
-  selector: 'app-dashboard-home',
-  templateUrl: './dashboard-home.component.html',
-  styleUrls: ['./dashboard-home.component.css']
+  selector: 'app-aboutme',
+  templateUrl: './aboutme.component.html',
+  styleUrls: ['./aboutme.component.css']
 })
-export class DashboardHomeComponent implements OnInit {
+export class AboutmeComponent implements OnInit {
   constructor(private titleService: Title) {
   }
 
