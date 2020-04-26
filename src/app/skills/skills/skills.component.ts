@@ -126,6 +126,11 @@ export class SkillsComponent implements OnInit {
       url:'../../../assets/images/nodejs.png',
     },
     {
+      name:'rxjs',
+      href:'https://rxjs-dev.firebaseapp.com/',
+      url:'../../../assets/images/rxjs.png',
+    },
+    {
       name:'npm',
       href:'https://www.npmjs.com/',
       url:'../../../assets/images/npm.png',
