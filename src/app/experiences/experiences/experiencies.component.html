@@ -9,13 +9,22 @@
             <mat-card-subtitle>{{job.position}}</mat-card-subtitle>
           </div>
           <div style="text-align:right">
-            <div>
+            <div *ngIf="job.remote">
               <span class="material-icons">
-               <label *ngIf="!job.remote">location_on</label>
-               <label *ngIf="job.remote">home</label>
+               <label>home</label>
               </span>
+              <div><span>{{job.location}}</span></div>
             </div>
-            <div> <span> {{job.location}} </span></div>
+            <div *ngIf="!job.remote">
+              <div>
+                <a mat-stroked-button color="primary" [href]="job.locationUrl" target="_blank">
+                <span>{{job.location}}</span>
+                  <i class="material-icons">
+                    <label>location_on</label>
+                  </i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </mat-card-header>
