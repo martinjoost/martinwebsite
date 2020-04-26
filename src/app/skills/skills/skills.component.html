@@ -15,7 +15,7 @@
               <mat-list-item *ngFor="let language of languages" mat-list-item>
                 <img 
                 matListIcon  
-                alt="" 
+                title="{{language.name | uppercase}}" 
                 class="otherlibs__img" 
                 [src]="language.url">
                 <a href="javascript:void(0);" mat-line mat-flat-button > 
@@ -29,7 +29,7 @@
               <mat-list-item *ngFor="let framework of frameworks" mat-list-item>
                 <img 
                 matListIcon  
-                alt="" 
+                [title]="framework.name" 
                 class="otherlibs__img" 
                 [src]="framework.url">
                 <a *ngIf="framework.versions" target="_blank" (click)="openBottomSheet()" mat-line mat-flat-button > 
@@ -48,7 +48,7 @@
               <mat-list-item *ngFor="let lib of othersLibs" mat-list-item>
                 <img 
                 matListIcon  
-                alt="" 
+                [title]="lib.name" 
                 class="otherlibs__img" 
                 [src]="lib.url">
                 <a target="_blank" [href]="lib.href" mat-line mat-flat-button > 
