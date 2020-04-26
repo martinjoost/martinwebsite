@@ -67,6 +67,31 @@ export class SkillsComponent implements OnInit {
       href:'https://es.wikipedia.org/wiki/Visual_Basic_.NET',
       url:'../../../assets/images/vb.png',
     },
+    {
+      name:'Bitbucket',
+      href:'https://bitbucket.org/',
+      url:'../../../assets/images/bitbucket.png',
+    },
+    {
+      name:'Git',
+      href:'https://git-scm.com/',
+      url:'../../../assets/images/git.png',
+    },
+    {
+      name:'gitlab',
+      href:'https://about.gitlab.com',
+      url:'../../../assets/images/gitlab.png',
+    },
+    {
+      name:'github',
+      href:'https://github.com/',
+      url:'../../../assets/images/github.png',
+    },
+    {
+      name:'scrum',
+      href:'https://scrum.org/',
+      url:'../../../assets/images/scrum.png',
+    },
   ]
   frameworks:any = [
     {
@@ -79,6 +104,11 @@ export class SkillsComponent implements OnInit {
       name:'Nodejs',
       href:'https://nodejs.org/es/',
       url:'../../../assets/images/nodejs.png',
+    },
+    {
+      name:'flutter',
+      href:'https://flutter.dev/',
+      url:'../../../assets/images/flutter.png',
     },
     {
       name:'Reactjs',
