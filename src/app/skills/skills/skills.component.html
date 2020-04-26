@@ -24,7 +24,7 @@
                 <a *ngIf="!language.href" href="javascript:void(0);" mat-line mat-flat-button > 
                   {{language.name | uppercase}} 
                 </a>
-                <span *ngIf="language.href" class="material-icons">web_asset</span>
+                <i class="fas fa-globe" *ngIf="language.href"></i>
               </mat-list-item>
             </mat-list>
           </mat-tab>
@@ -43,7 +43,7 @@
                   {{framework.name | uppercase}} 
                 </a>
                 <span *ngIf="framework.versions" class="material-icons">extension</span>
-                <span *ngIf="framework.href" class="material-icons">web_asset</span>
+                <i class="fas fa-globe" *ngIf="framework.href"></i>
               </mat-list-item>
             </mat-list>
           </mat-tab>
@@ -61,7 +61,7 @@
                 <a *ngIf="!lib.href" href="javascript:void(0);" mat-line mat-flat-button > 
                   {{lib.name | uppercase}} 
                 </a>
-                <span *ngIf="lib.href" class="material-icons">web_asset</span>
+                <i class="fas fa-globe" *ngIf="lib.href"></i>
               </mat-list-item>
             </mat-list>  
           </mat-tab>
