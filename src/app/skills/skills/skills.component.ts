@@ -92,6 +92,16 @@ export class SkillsComponent implements OnInit {
       href:'https://scrum.org/',
       url:'../../../assets/images/scrum.png',
     },
+    {
+      name:'sass',
+      href:'hthttps://sass-lang.com/',
+      url:'../../../assets/images/scss.png',
+    },
+    {
+      name:'jquery',
+      href:'https://jquery.com/',
+      url:'../../../assets/images/jquery.png',
+    },
   ]
   frameworks:any = [
     {
