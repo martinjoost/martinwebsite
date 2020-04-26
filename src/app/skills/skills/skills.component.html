@@ -26,26 +26,24 @@
           </mat-tab>
           <mat-tab label="Frameworks"> 
             <mat-list>
-              <mat-list-item mat-list-item>
-                <img matListIcon  class="otherlibs__img" 
-                src="https://www.stickpng.com/assets/images/5847ea22cef1014c0b5e4833.png" alt="">
-                <button mat-line mat-flat-button (click)="openBottomSheet()">ANGULAR<span class="material-icons">
-                  trending_up
-                  </span></button>
-              </mat-list-item>
               <mat-list-item *ngFor="let framework of frameworks" mat-list-item>
                 <img 
                 matListIcon  
                 alt="" 
                 class="otherlibs__img" 
                 [src]="framework.url">
-                <a target="_blank" [href]="framework.href" mat-line mat-flat-button > 
+                <a *ngIf="framework.versions" target="_blank" (click)="openBottomSheet()" mat-line mat-flat-button > 
                   {{framework.name | uppercase}} 
                 </a>
+                <a *ngIf="!framework.versions" target="_blank" [href]="framework.href" mat-line mat-flat-button > 
+                  {{framework.name | uppercase}} 
+                </a>
+                <span *ngIf="framework.versions" class="material-icons">extension</span>
+                <span *ngIf="framework.href" class="material-icons">web</span>
               </mat-list-item>
             </mat-list>
           </mat-tab>
-          <mat-tab label="Otras librerías"> 
+          <mat-tab label="Otras Tecnologías"> 
             <mat-list>
               <mat-list-item *ngFor="let lib of othersLibs" mat-list-item>
                 <img 

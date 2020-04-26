@@ -2,3 +2,10 @@
   color: #4527A0;
   font-size: 2em;
 }
+.otherlibs__img{
+    width: auto !important;
+    border-radius: 0px !important;
+}
+.material-icons{
+  font-size: 1em;
+}
