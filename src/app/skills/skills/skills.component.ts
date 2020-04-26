@@ -102,6 +102,16 @@ export class SkillsComponent implements OnInit {
       href:'https://jquery.com/',
       url:'../../../assets/images/jquery.png',
     },
+    {
+      name:'graphql',
+      href:'https://graphql.org/',
+      url:'../../../assets/images/graph.png',
+    },
+    {
+      name:'rest',
+      href:'',
+      url:'../../../assets/images/rest.png',
+    },
   ]
   frameworks:any = [
     {
@@ -129,6 +139,11 @@ export class SkillsComponent implements OnInit {
       name:'Reactjs',
       href:'https://angular.io/guide/universal',
       url:'../../../assets/images/reactjs.png',
+    },
+    {
+      name:'vuejs',
+      href:'https://vuejs.org/',
+      url:'../../../assets/images/vue.png',
     },
     {
       name:'Bootstrap',
