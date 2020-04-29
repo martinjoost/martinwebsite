@@ -47,6 +47,7 @@ export class SkillsComponent implements OnInit {
       href:'https://angular.io/guide/service-worker-getting-started',
       url:'../../../assets/images/pwa.png',
     },
+   
     {
       name:'Firebase',
       href:'https://firebase.google.com/',
@@ -56,6 +57,16 @@ export class SkillsComponent implements OnInit {
       name:'Highcharts.js',
       href:'https://www.highcharts.com',
       url:'../../../assets/images/highchartjs.png',
+    },
+    {
+      name:'npm',
+      href:'https://www.npmjs.com/',
+      url:'../../../assets/images/npm.png',
+    },
+    {
+      name:'rxjs',
+      href:'https://rxjs-dev.firebaseapp.com/',
+      url:'../../../assets/images/rxjs.png',
     },
     {
       name:'i18n Internazionalization',
@@ -76,6 +87,16 @@ export class SkillsComponent implements OnInit {
       name:'Git',
       href:'https://git-scm.com/',
       url:'../../../assets/images/git.png',
+    },
+    {
+      name:'Angular Material',
+      href:'https://material.angular.io/',
+      url:'../../../assets/images/angularmaterial.png',
+    },
+    {
+      name:'Material Design',
+      href:'https://material.io/',
+      url:'../../../assets/images/materialdesign.png',
     },
     {
       name:'gitlab',
@@ -108,6 +129,11 @@ export class SkillsComponent implements OnInit {
       url:'../../../assets/images/graph.png',
     },
     {
+      name:'Bootstrap',
+      href:'https://getbootstrap.com/',
+      url:'../../../assets/images/bootstrap.png',
+    },
+    {
       name:'rest',
       href:'',
       url:'../../../assets/images/rest.png',
@@ -125,16 +151,7 @@ export class SkillsComponent implements OnInit {
       href:'https://nodejs.org/es/',
       url:'../../../assets/images/nodejs.png',
     },
-    {
-      name:'rxjs',
-      href:'https://rxjs-dev.firebaseapp.com/',
-      url:'../../../assets/images/rxjs.png',
-    },
-    {
-      name:'npm',
-      href:'https://www.npmjs.com/',
-      url:'../../../assets/images/npm.png',
-    },
+   
     {
       name:'flutter',
       href:'https://flutter.dev/',

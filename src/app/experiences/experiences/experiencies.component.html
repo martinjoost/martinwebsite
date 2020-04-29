@@ -17,11 +17,9 @@
             </div>
             <div *ngIf="!job.remote">
               <div>
-                <a mat-stroked-button color="primary" [href]="job.locationUrl" target="_blank">
-                <span>{{job.location}}</span>
-                  <i class="material-icons">
-                    <label>location_on</label>
-                  </i>
+                <a [href]="job.locationUrl" target="_blank" mat-stroked-button color="primary">
+                  <span class="location__name">{{job.location}}</span>
+                  <span class="material-icons">location_on</span>
                 </a>
               </div>
             </div>
